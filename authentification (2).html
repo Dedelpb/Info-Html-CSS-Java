@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <link rel="stylesheet" href="../css/authentification.css">
+
+
+
+</head>
+
+
+<body>
+    
+    <nav class="menu">
+        <ul>
+        <a class="onglet" href="index.html"> Acceuil </a>
+        <a class="onglet" href="reservation.html"> Reservation </a>
+        <a class="onglet" href="contact.html"> A propos & Contact </a>
+        <a class="onglet" href="recapitulatif.html"> Recapitulatif </a> 
+        <a class="onglet" href="authentification.html"> Authentification </a>
+        <a class="onglet" href="panier.html"> Panier </a>
+        <a class="onglet" href="connexion.html"> Connexion </a>
+        </ul>
+      </nav>
+
+
+
+    <h2>Inscription:</h2>
+    <fieldset>
+    
+
+
+    <form id='inscription'>
+    
+    Adresse email: </br> 
+    <input type='email' name="email" placeholder="Entrer votre adresse email" id='email'> </br> 
+    Mot de passe: </br> 
+    <input type='password' name='password' id="mdp" placeholder="Entrer votre mot de passe"> </br>
+    <span id='aideMdp'></span>
+    Confirmer mot de passe: </br>
+    <input type='password' name='confirmpassword' id="mdp2"  placeholder="Confirmer votre mot de passe"> </br>
+    Age: </br>
+    <input type='number' name='age' placeholder="Entrer votre âge" min="1" > </br>
+    Sexe: </br>
+    <input type='radio' name='Sexe' value='Femme' checked> Femme
+    <input type='radio' name='Sexe' value='Homme' checked> Homme
+    <input type='radio' name='Sexe' value='Autre' checked> Autre </br> </br>
+
+    <label for="start"> Start date :</label>
+ 
+    <input type="date" id="start" name="trip-start"
+       min="2020-10-01" max="2030-01-01"><br></br>
+       <label for="start"> End date :  </label>
+ 
+    <input type="date" id="end" name="trip-stop"
+       min="2020-10-01" max="2030-01-01"><br></br>
+         Nombre d'adultes:</br>
+    <input type='number' name='NombreAdulte' min="0" placeholder="Entrer le nbre d'adultes"> </br>
+        Nombre d'enfants:</br>
+    <input type='number' name='NombreEnfant' min='0' placeholder="Entrer le nombre d'enfants"> </br></br>
+
+       Repas compris: </br>
+    <input type='radio' name='repas' value='OUI' checked> OUI
+    <input type='radio' name='repas' value='NON' checked> NON  </br></br>
+        
+    Questions ou remarques importantes:</br>
+    <input type='text' name='questions' ></br></br>
+         
+    Prix estimé: </br>
+    <input></br></br>
+    
+       
+    <input type="submit" value='Soumettre'>
+
+
+       
+    
+
+
+    
+    </fieldset>
+
+
+    </form>
+    <script src='validformV2.js'></script>
+
+    <p style='color: red;' id='erreur'></p>
+
+</body>
+
+
+
+
+</html>
